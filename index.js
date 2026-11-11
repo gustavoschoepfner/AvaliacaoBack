@@ -78,15 +78,13 @@ app.put("/api/v1/tarefa/alterdesc/:id", (req, res) => {
 app.put("/api/v1/tarefa/concluir/:id", (req, res) => {
     const id = req.params.id
     const tarefa = db.find(p => p.id == id)
-    const { concluido } = req.body
-    
 
     if(!tarefa){
         res.status(404).send({ message: "Tarefa não encontrada"})
         return
     }
 
-    tarefa.concluido = concluido
+    tarefa.concluido = true
     res.send({ message: "Estado alterado com sucesso"})
 })
 
