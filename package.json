@@ -1,0 +1,25 @@
+{
+  "name": "crud-lista-de-tarefas-node",
+  "version": "1.0.0",
+  "description": "primeiro CRUD node",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "node --watch index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavoschoepfner/crud-lista-de-tarefas-node.git"
+  },
+  "keywords": [],
+  "author": "Gustavo",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/gustavoschoepfner/crud-lista-de-tarefas-node/issues"
+  },
+  "homepage": "https://github.com/gustavoschoepfner/crud-lista-de-tarefas-node#readme",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
